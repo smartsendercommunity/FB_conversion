@@ -24,4 +24,4 @@ if (array_key_exists("email", $_GET)) {
   $result["fbEmail"] = hash("sha256", $_GET["email"]);
 }
 
-$result = json_encode($result, JSON_UNESCAPED_UNICODE);
+echo json_encode($result, JSON_UNESCAPED_UNICODE);
